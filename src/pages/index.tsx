@@ -91,7 +91,7 @@ export default function Home({ categories }: Props) {
   return (
     <>
       <AppLayout title={title} description={description} sidebarLinks="foo">
-        <div className="w-full md:mx-auto md:w-11/12 lg:max-w-5xl">
+        <div className="w-full bg-product-list bg-fixed md:mx-auto md:w-11/12 lg:max-w-5xl">
           {categories.map((category, index) => (
             <CategoryGroup
               key={category.id}

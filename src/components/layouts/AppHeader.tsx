@@ -6,7 +6,7 @@ import MenuToggle from './MenuToggle';
 const AppHeader = () => {
   return (
     <header
-      className="sticky top-0 z-fixed flex h-16 items-center justify-between bg-gray-300 px-4 dark:bg-dark-header lg:px-8"
+      className="sticky top-0 z-fixed flex h-16 items-center justify-between bg-gray-300 px-4 dark:bg-dark-header md:mx-auto md:w-11/12 lg:max-w-5xl lg:px-8"
       id="home-header"
     >
       <div className="flex items-center lg:gap-x-4">

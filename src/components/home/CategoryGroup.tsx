@@ -48,7 +48,7 @@ const CategoryGroup = ({ category, imagePriority = false }: Props) => {
           </div>
         </div>
       </header>
-      <div className="grid gap-y-3 bg-product-list bg-fixed py-2 pl-4 md:grid-cols-2 md:gap-4 md:px-4 md:py-2 xl:grid-cols-3">
+      <div className="grid gap-y-3 py-2 pl-4 md:grid-cols-2 md:gap-4 md:px-4 md:py-2 xl:grid-cols-3">
         {productList.map((item, index) => (
           <ProductCard
             product={item}
