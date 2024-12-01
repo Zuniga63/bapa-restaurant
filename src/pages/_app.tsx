@@ -7,10 +7,7 @@ import { Provider } from 'react-redux';
 import { store } from 'src/store';
 
 export default function App({ Component, pageProps }: AppProps) {
-  // --------------------------------------------------------------------------
-  // MANTINE CONFIG
-  // --------------------------------------------------------------------------
-  emCache(); // Cache for use mantine with tailwind
+  emCache();
 
   return (
     <MantineProvider
