@@ -45,20 +45,18 @@ const SidebarLinks = () => {
               className="block w-full px-4 py-2"
             >
               <div className="flex items-center gap-3 text-dark dark:text-light">
-                {category.image && (
-                  <figure
-                    className="relative block aspect-square w-16 shrink-0 overflow-hidden rounded-full border-[3px] border-golden-rod shadow-lg"
-                    role="presentation"
-                  >
-                    <Image
-                      src={category.image.url}
-                      alt={category.name}
-                      fill
-                      sizes="56px"
-                      className="object-cover object-left-top"
-                    />
-                  </figure>
-                )}
+                <figure
+                  className="relative block aspect-square w-16 shrink-0 overflow-hidden rounded-full border-[3px] border-golden-rod shadow-lg"
+                  role="presentation"
+                >
+                  <Image
+                    src="https://res.cloudinary.com/dr8snppzz/image/upload/v1732934462/BAPA/LOGO_BAPA-10_as1tic.svg"
+                    alt={category.name}
+                    fill
+                    sizes="56px"
+                    className="object-cover object-left-top"
+                  />
+                </figure>
                 <div className="flex-grow py-1 pr-4 text-left">
                   <h3 className="line-clamp-1 font-display text-xl">
                     {category.name}

@@ -29,11 +29,11 @@ const CategoryGroup = ({ category, imagePriority = false }: Props) => {
         <div className="flex items-center gap-x-3 bg-[radial-gradient(circle,_rgba(37,37,37,0.9),_rgba(44,44,44,0.9),_rgba(18,18,18,0.9))] px-1 py-2 shadow backdrop-blur">
           {image && (
             <figure
-              className="relative aspect-square w-20 shrink-0 overflow-hidden rounded"
+              className="relative aspect-square w-16 shrink-0 overflow-hidden rounded-full"
               role="presentation"
             >
               <Image
-                src={image.url}
+                src="https://res.cloudinary.com/dr8snppzz/image/upload/v1732934462/BAPA/LOGO_BAPA-10_as1tic.svg"
                 alt={category.name}
                 width={image.width}
                 height={image.height}
