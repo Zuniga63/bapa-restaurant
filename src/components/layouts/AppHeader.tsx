@@ -2,6 +2,7 @@ import { Avatar } from '@mantine/core';
 import React from 'react';
 import BrandLogo from './BrandLogo';
 import MenuToggle from './MenuToggle';
+import { config } from 'src/config';
 
 const AppHeader = () => {
   return (
@@ -17,7 +18,7 @@ const AppHeader = () => {
       </div>
       <div className="text-center">
         <h2 className="text-base font-bold text-dark dark:text-light">
-          Restaurante BAPA
+          {config.appName}
         </h2>
         <p className="line-clamp-1 text-xs">Deleitate en grande</p>
       </div>

@@ -1,6 +1,7 @@
 import { useWindowScroll } from '@mantine/hooks';
 import Image from 'next/image';
 import React from 'react';
+import { config } from 'src/config';
 import { hideMenu } from 'src/features/app';
 import { homeSelector } from 'src/features/home';
 import { useAppDispatch, useAppSelector } from 'src/store/hooks';
@@ -50,8 +51,8 @@ const SidebarLinks = () => {
                   role="presentation"
                 >
                   <Image
-                    src="https://res.cloudinary.com/dr8snppzz/image/upload/v1732934462/BAPA/LOGO_BAPA-10_as1tic.svg"
-                    alt={category.name}
+                    src={config.brandLogo}
+                    alt={`${config.appName} - Logo`}
                     fill
                     sizes="56px"
                     className="object-cover object-left-top"

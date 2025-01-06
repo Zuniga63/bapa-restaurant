@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { ICategoryHome, IProductHome } from 'src/features/home';
 import ProductCard from './ProductCard';
+import { config } from 'src/config';
 
 interface Props {
   category: ICategoryHome;
@@ -33,7 +34,7 @@ const CategoryGroup = ({ category, imagePriority = false }: Props) => {
               role="presentation"
             >
               <Image
-                src="https://res.cloudinary.com/dr8snppzz/image/upload/v1732934462/BAPA/LOGO_BAPA-10_as1tic.svg"
+                src={config.brandLogo}
                 alt={category.name}
                 width={image.width}
                 height={image.height}

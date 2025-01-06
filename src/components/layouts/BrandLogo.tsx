@@ -1,19 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { appSelector } from 'src/features/app';
-import { useAppSelector } from 'src/store/hooks';
+import { config } from 'src/config';
 
 const BrandLogo = () => {
-  const { brandLogo, name } = useAppSelector(appSelector);
-
   return (
     <Link href="/">
       <figure className="relative aspect-square h-12">
-        {brandLogo ? (
+        {config.brandLogo ? (
           <Image
-            src={brandLogo}
-            alt={`${name} - Logo`}
+            src={config.brandLogo}
+            alt={`${config.appName} - Logo`}
             fill
             className="object-contain"
             sizes="48px"
